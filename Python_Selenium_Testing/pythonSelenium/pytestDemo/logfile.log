@@ -1,0 +1,5 @@
+2023-01-04 10:25:48,205 :INFO : test_editProfile :Indrajeet
+2023-01-04 10:25:48,211 :INFO : test_editProfile :ihappy@gmail.com
+2023-01-04 10:28:20,546 :INFO : test_editProfile :Indrajeet
+2023-01-04 10:28:20,546 :INFO : test_editProfile :ihappy@gmail.com
+2023-01-04 10:28:20,555 :CRITICAL : pythonSelenium.pytestDemo.test_logging :Critical Issue
