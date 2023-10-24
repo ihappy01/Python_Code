@@ -1,22 +1,31 @@
-def reverse_substring(s,size):
-    i=0
-    result =""
+# a = "My Interview"
+# print('%.6s'%a)
 
-    while i<len(s):
-        if i+size <= len(s):
-            result = result + s[i:i+size][::-1]
-            i= i+size
-        else:
-            result = result + s[i:][::-1]
-            break
+#
+# def MyInt(a):
+#
+#     months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
+#
+#     yield months[a]
+#
+#     yield months[a+2]
+#
+#
+# next_month = MyInt(3)
+#
+# print(next(next_month), next(next_month))
 
-    return result
+
+#
+# with open("my_note1.txt","r") as f:
+# 	print(f.read(10))
 
 
-text = "Hello World"
-size =3
+from datetime import datetime
 
+print(datetime.now())
 
-rev_str =reverse_substring(text,size)
-print(rev_str)
+current_time = datetime.now()
 
+date_format = current_time.strftime('%H:%M')
+print(date_format)

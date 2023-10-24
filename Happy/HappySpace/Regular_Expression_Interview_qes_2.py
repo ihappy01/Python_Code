@@ -1,2 +1,7 @@
-x = [1,2,3,4,5]
-print(x[:-1])
+#To find special character without using isalpha
+import re
+s= "12345^dfghj&oi@78"
+
+# match=re.findall(r'[^a-zA-Z0-9]',s)
+match=re.findall(r'\W+',s)
+print(match)

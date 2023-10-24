@@ -33,3 +33,11 @@ def my_sum(x,y):
 sum = reduce(my_sum,num)
 # sum = reduce(lambda x,y:x+y,num)
 print(sum)
+
+
+# ================================================
+# Write a program to find even numbers present in a list
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+new_l =  list(filter(lambda x:x%2==0,l))
+print("The even m=numbers present the list are ",new_l)
