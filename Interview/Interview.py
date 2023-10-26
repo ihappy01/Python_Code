@@ -1,31 +1,40 @@
-# a = "My Interview"
-# print('%.6s'%a)
+# class Aminal -Name , no_leg_legs,color
 
-#
-# def MyInt(a):
-#
-#     months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
-#
-#     yield months[a]
-#
-#     yield months[a+2]
-#
-#
-# next_month = MyInt(3)
-#
-# print(next(next_month), next(next_month))
+class Animal:
+    def __init__(self,name,no_of_legs,color):
+        self.name = name
+        self.no_of_legs = no_of_legs
+        self.color = color
+
+    def display(self):
+        print(f"{self.name} is having {self.no_of_legs} legs and its color is {self.color}")
+class Dog(Animal):
+    pass
+class Cat(Animal):
+    pass
+
+ob =Dog("dog",4,"Golden")
+ob1 = Cat('cat',4,'Black')
+
+ob.display()
+ob1.display()
 
 
-#
-# with open("my_note1.txt","r") as f:
-# 	print(f.read(10))
 
 
-from datetime import datetime
+input_list = ["3", "6", "2", "9", "4", "6"]
 
-print(datetime.now())
+l=[]
+for i in input_list:
+    if i not in l:
+        l.append(i)
+print(l)
 
-current_time = datetime.now()
+length = len(l)
 
-date_format = current_time.strftime('%H:%M')
-print(date_format)
+for i in range(length):
+    for j in range(length-i-1):
+        if l[j]>l[j+1]:
+            l[j],l[j+1]=l[j+1],l[j]
+
+print("The sorted list is",l)
