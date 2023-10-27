@@ -1,40 +1,52 @@
-# class Aminal -Name , no_leg_legs,color
+# Example 1:
+# Input: s = "()"
+# Output: true
+# Example 2:
+# Input: s = "()[]{}"
+# Output: true
+# Example 3:
+# Input: s = "(]"
+# Output: false
 
-class Animal:
-    def __init__(self,name,no_of_legs,color):
-        self.name = name
-        self.no_of_legs = no_of_legs
-        self.color = color
-
-    def display(self):
-        print(f"{self.name} is having {self.no_of_legs} legs and its color is {self.color}")
-class Dog(Animal):
-    pass
-class Cat(Animal):
-    pass
-
-ob =Dog("dog",4,"Golden")
-ob1 = Cat('cat',4,'Black')
-
-ob.display()
-ob1.display()
+# s="({})"
 
 
+s = "()[]{}"
+
+def valid_string(s):
+  d = {')':'(',']':'[','}':'{'}
+  l = []
+
+  for ch in s:
+      if ch in d.values():
+          l.append(ch)
+      elif ch in d.keys():
+          if not l or l.pop() != d[ch]:
+              return False
+      else:
+          return False
+
+  return not l
+
+print(valid_string("()"))
+print(valid_string("()[]{}"))
+print(valid_string("(]"))
 
 
-input_list = ["3", "6", "2", "9", "4", "6"]
 
-l=[]
-for i in input_list:
-    if i not in l:
-        l.append(i)
-print(l)
 
-length = len(l)
 
-for i in range(length):
-    for j in range(length-i-1):
-        if l[j]>l[j+1]:
-            l[j],l[j+1]=l[j+1],l[j]
+#
+# length = len(s)
+# # flag =0
+# # # for i in range(length):
+# for j in range(length-1):
+#      if s[j] in d.keys():  #(
+#         d[s[j]] in d.values()
+#         # j=j+1
+#      else:
+#         print("Invalid String")
+#
 
-print("The sorted list is",l)
+# if flag==1:
+#     print("String is valid")
