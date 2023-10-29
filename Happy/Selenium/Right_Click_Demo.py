@@ -11,8 +11,8 @@ driver.maximize_window()
 action = ActionChains(driver)
 
 search_box =driver.find_element(By.XPATH,"//div[@id='search']/input")
-# action.context_click(search_box).perform()
-action.double_click(search_box).perform()
+action.context_click(search_box).perform()
+# action.double_click(search_box).perform()
 
 time.sleep(5
            )
