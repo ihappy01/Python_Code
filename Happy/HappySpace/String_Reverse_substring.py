@@ -5,17 +5,19 @@ def reverse_substring(s,size):
     length=len(s)
 
     while i<length:
-        if i<length:
+        # if i<length:
             result=result+s[i:i+size][::-1]
             i=i+size
-        else:
-            result=result+s[i:][::-1]
-            break
+
+        # else:
+        #     result=result+s[i:][::-1]
+        #
+        #     break
 
     return result
 
 
 text= "Hello World"
-size=4
+size=2
 
 print(reverse_substring(text,size))
