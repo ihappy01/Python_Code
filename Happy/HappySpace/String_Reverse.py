@@ -10,15 +10,22 @@ text = "Hello World, Good Morning"
 # print(s)
 
 #Method 3: using while loop
-ch=list(text)
-left,right = 0, len(ch)-1
+# ch=list(text)
+# left,right = 0, len(ch)-1
+#
+# while left<right:
+#     ch[left],ch[right]=ch[right],ch[left]
+#     left=left+1
+#     right=right-1
+#
+# print("".join(ch))
 
-while left<right:
-    ch[left],ch[right]=ch[right],ch[left]
-    left=left+1
-    right=right-1
 
-print("".join(ch))
+# To reverse each word in the
+words = text.split(" ")
+l=[]
 
+for word in words:
+    l.append(word[::-1])
 
-# To reverse each word in the 
+print(" ".join(l))
