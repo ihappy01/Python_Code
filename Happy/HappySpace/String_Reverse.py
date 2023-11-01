@@ -19,3 +19,6 @@ while left<right:
     right=right-1
 
 print("".join(ch))
+
+
+# To reverse each word in the 
