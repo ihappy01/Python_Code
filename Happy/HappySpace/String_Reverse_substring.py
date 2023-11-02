@@ -1,37 +1,13 @@
 
-# def reverse_substring(s,size):
-#     result=""
-#     i=0
-#     length=len(s)
-#
-#     while i<length:
-#         # if i<length:
-#             result=result+s[i:i+size][::-1]
-#             i=i+size
-#
-#         # else:
-#         #     result=result+s[i:][::-1]
-#         #
-#         #     break
-#
-#     return result
-#
-#
-# text= "Hello World"
-# size=2
-#
-# print(reverse_substring(text,size))
-
-
-
-# reverse substring
-text = "Hello World"
-l=len(text)
+text="My name is Indrajeet"
 i=0
-size=5
-
-result= ""
+l=len(text)
+size=4
+s=''
 
 while i<l:
-    result=result+text[i:i+size][::-1]
+    s=s+text[i:i+size][::-1]
     i=i+size
+
+
+print(s)
