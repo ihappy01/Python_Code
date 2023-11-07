@@ -1,3 +1,9 @@
+"""
+-For all built in function there is an magic method defined in Python which we need modify to override it
+-Magic function (starting and ending with __ ) are automatically called
+-When we don't return from method and only using print in that method then by default 'None' is returned
+"""
+
 class Cart:
     def __init__(self,basket1,basket2,basket3):
         self.clothes = basket1
