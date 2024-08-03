@@ -32,3 +32,6 @@ select.select_by_visible_text('doc 3')
 
 # print(select.first_selected_option.text)
 
+
+time.sleep(5)
+
