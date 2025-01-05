@@ -9,7 +9,7 @@ text = "Hello World, Good Morning"
 #     s=ch+s
 # print(s)
 
-#Method 3: using while loop
+# Method 3: using while loop
 # ch=list(text)
 # left,right = 0, len(ch)-1
 #
