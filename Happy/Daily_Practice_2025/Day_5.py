@@ -1,3 +1,4 @@
+from audioop import reverse
 from tkinter.font import names
 
 # print("Hello world")
@@ -40,3 +41,24 @@ div_val=obj.division()
 print(div_val)
 mul_val=obj.multiple()
 print(mul_val)
+
+#=======================
+
+s = "Hello Wolrd"
+rev=''
+for ch in s:
+    rev=ch+rev
+
+print(rev)
+
+print(s[::-1])
+
+# for ch in reversed(s):
+#     print(ch,end='')
+
+print(list(reversed(s)))
+
+print("".join(reversed(s)))
+
+
+
