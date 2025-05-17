@@ -27,10 +27,10 @@ for i in gen_ob:
 
 # ---------------Iterator -----------------------------
 print("---------------Iterator------------------")
-l= ["2","Happy","cold",99]
-
-value= iter(l)
-
-print(next(value))
-print(next(value))
-print(next(value))
+# l= ["2","Happy","cold",99]
+#
+# value= iter(l)
+#
+# print(next(value))
+# print(next(value))
+# print(next(value))
