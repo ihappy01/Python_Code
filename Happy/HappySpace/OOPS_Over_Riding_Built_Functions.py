@@ -2,6 +2,9 @@
 -For all built in function there is an magic method defined in Python which we need modify to override it
 -Magic function (starting and ending with __ ) are automatically called
 -When we don't return from method and only using print in that method then by default 'None' is returned
+
+https://www.google.com/search?q=python+overloading+and+overriding&rlz=1C1CHBF_enIN1129IN1129&oq=python+over&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyBwgAEAAYgAQyBwgBEAAYgAQyBwgCEAAYgAQyBggDEEUYOTIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTE1MTE2ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8
+
 """
 
 class Cart:
