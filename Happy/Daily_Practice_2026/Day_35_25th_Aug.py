@@ -12,7 +12,7 @@ print(f'You salary is {salary:,}')
 
 '''
 write a program l =[1,0,0,0,1,1,1,0,1,0]  to get all 0's at starting and 1's at last  
-Write a lambda function to print an even number from l =[1,2,3,4,5,6,7,8,9,10] 
+
 '''
 
 l =[1,0,0,0,1,1,1,0,1,0]

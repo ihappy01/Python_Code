@@ -20,10 +20,21 @@ text = "Hello World, Good Morning"
 
 
 # To reverse each word in the
+# words = text.split(" ")
+# l=[]
+#
+# for word in words:
+#     l.append(word[::-1])
+#
+# print(" ".join(l))
+
+# To reverse each word in the without slicing
 words = text.split(" ")
-l=[]
-
+nw= []
 for word in words:
-    l.append(word[::-1])
+    rev=''
+    for ch in word:
+        rev=ch + rev
+    nw.append(rev)
 
-print(" ".join(l))
+print((' ').join(nw))
