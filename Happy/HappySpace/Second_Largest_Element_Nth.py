@@ -43,12 +43,12 @@ print(sec_max)
 # length=len(l)
 #
 # for i in range(length):
-#     for j in range(length-i-1):
-#         if l[j]>l[j+1]:
-#           l[j],l[j+1]=l[j+1],l[j]
+#     for j in range(length-1):
+#         if l[i]<l[j]:
+#           l[i],l[j]=l[j],l[i]
 #
 #
-# print(l[:-1])
+# print(l[-2])
 
 
 
